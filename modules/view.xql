@@ -11,13 +11,11 @@ import module namespace templates="http://exist-db.org/xquery/templates" ;
  : The following modules provide functions which will be called by the 
  : templating.
  :)
-import module namespace config="http://podlove.org/apps/podlove-analyser/config" at "config.xqm";
+import module namespace config="http://podlove.org/podlove-analyzer/config" at "config.xqm";
+
 import module namespace app="http://podlove.org/apps/podlove-analyser/templates" at "app.xql";
 
-declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
-
-declare option output:method "html5";
-declare option output:media-type "text/html";
+declare option exist:serialize "method=html5 media-type=text/html enforce-xhtml=yes";
 
 let $config := map {
     $templates:CONFIG_APP_ROOT := $config:app-root,

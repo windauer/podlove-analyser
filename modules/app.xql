@@ -3,7 +3,7 @@ xquery version "3.0";
 module namespace app="http://podlove.org/apps/podlove-analyser/templates";
 
 import module namespace templates="http://exist-db.org/xquery/templates" ;
-import module namespace config="http://podlove.org/apps/podlove-analyser/config" at "config.xqm";
+import module namespace config="http://podlove.org/podlove-analyzer/config" at "config.xqm";
 
 (:~
  : This is a sample templating function. It will be called by the templating module if
