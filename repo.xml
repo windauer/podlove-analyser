@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meta xmlns="http://exist-db.org/xquery/repo">
-    <description>Podlove Podcast Feed Analyser</description>
-    <author>Lars Windauer</author>
+    <description>The Podlove Analyzer</description>
+    <author>lasse</author>
     <website/>
     <status>alpha</status>
-    <license>GNU-LGPL</license>
+    <license>MIT</license>
     <copyright>true</copyright>
     <type>application</type>
-    <target>podlove-analyser</target>
+    <target>podlove-analyzer</target>
     <prepare>pre-install.xql</prepare>
-    <finish/>
-    <permissions user="podlove" group="dba" mode="rw-rw-r--"/>
-    <deployed>2015-04-17T14:36:03.934+02:00</deployed>
+    <finish>post-install.xql</finish>
+    <permissions user="podlove" password="podlove" group="podlove" mode="rwxrwxr-x"/>
 </meta>

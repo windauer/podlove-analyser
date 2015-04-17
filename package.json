@@ -1,8 +1,8 @@
 {
-  "name": "podlove-validator",
+  "name": "podlove-analyzer",
   "version": "0.0.1",
-  "url":"http://podlove.org/podlove-validator",
-  "description": "The Podlove Validator",
+  "url":"http://podlove.org/podlove-analyzer",
+  "description": "The Podlove Analyzer",
   "main": "resources/js/app.js",
   "directories": {
     "doc": "doc"

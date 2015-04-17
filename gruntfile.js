@@ -110,7 +110,6 @@ module.exports = function (grunt) {
                                 'resources/xsd/**',
                                 'resources/xsl/**',
                                 'templates/**',
-                                'content/**',
                                 'test/**',
                                 '*.xconf','*.xql', '*.xml', '*.txt', '*.ico', '*.html'
                         ],
@@ -190,7 +189,7 @@ module.exports = function (grunt) {
                     strictImports:true
                 },
                 files: {
-                    "resources/css/styles.css": "resources/css/styles.less"
+                    "resources/css/style.css": "resources/css/style.less"
                 }
             },
             production: {
@@ -198,7 +197,7 @@ module.exports = function (grunt) {
                     strictImports:true
                 },
                 files: {
-                    "resources/css/styles.css": "resources/css/styles.less"
+                    "resources/css/style.css": "resources/css/style.less"
                 }
             }
         },
@@ -274,7 +273,6 @@ module.exports = function (grunt) {
                     '*.xml',
                     '*.xql',
                     '*.html',
-                    'content/**',
                     'data/**',
                     'docs/**',
                     'modules/**',
